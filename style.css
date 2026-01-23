@@ -172,6 +172,10 @@ span.showall > a > img {
     display: none;
   }
 
+  header.tab {
+    border-bottom: solid 1px #cef1ec;
+  }
+
   .tab {
     display: inline-flex;
     justify-content: space-between;
