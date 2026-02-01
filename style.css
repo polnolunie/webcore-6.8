@@ -48,8 +48,10 @@ header.desktop-ver {
 }
 
 .icon__logo {
-  align-items: center;
   display: flex;
+  align-items: center;
+  position: relative;
+  bottom: 10px;
   height: 40px;
   padding-left: 35px;
   font-size: 28px;
@@ -61,7 +63,6 @@ header.desktop-ver {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0px 10px;
   width: 100%;
 }
 
@@ -96,40 +97,42 @@ header.desktop-ver {
 }
 
 .navigation > ul > li {
-  height: 40px;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
 }
 
 ul li a {
+  height: 40px;
   font-size: 16px;
   font-weight: 500;
   color: #7e7e82;
   text-decoration: none;
-  padding: 0px 20px;
-  padding: 8px 20px;
+  padding: 0 22px;
   border: solid 2px transparent;
+  display: flex;
+  align-items: center;
 }
 
 ul.navigation__list li a:hover {
   border: solid 2px #b8ffec;
   border-radius: 5px;
+  background-color: #fff;
 }
 
 main {
   padding: 25px;
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: row;
 }
 
 .right-img img {
   border-radius: 10px;
-  max-width: 532px;
   height: auto;
-  width: 100%;
-  display: block;
+  width: 700px;
+  display: flex;
 }
 
 .main-container > div {
@@ -144,7 +147,7 @@ span.showall-btn {
   align-items: center;
   font-weight: 500;
   font-size: 16px;
-  margin: 5px 30px;
+  padding: 15px;
 }
 
 span.showall-btn a {
@@ -166,6 +169,7 @@ span.showall-btn > a > img {
     box-sizing: border-box;
     margin: 0 !important;
   }
+
   .header__group {
     display: none;
   }
@@ -197,6 +201,10 @@ span.showall-btn > a > img {
     border-right: solid 1px #eaeaea;
   }
 
+  .header__icon {
+    padding-bottom: 10px;
+  }
+
   .navigation {
     max-width: 100%;
     overflow: hidden;
@@ -207,8 +215,6 @@ span.showall-btn > a > img {
     overflow-x: auto;
     max-height: 50px;
     overflow-y: hidden;
-    padding: 0;
-    margin: 0;
     list-style: none;
     flex-wrap: nowrap;
   }
@@ -231,6 +237,22 @@ span.showall-btn > a > img {
 
   .main__content2 {
     display: none;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .main__content1 {
+    padding: 10px;
+  }
+
+  .right-img > img {
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
   }
 
   .navigation ul li {
@@ -275,7 +297,7 @@ span.showall-btn > a > img {
     flex-wrap: nowrap !important;
     background-color: #fff;
     border-bottom: solid 1px #cef1ec;
-    padding: 15px 0;
+    padding: 15px 10px;
   }
 
   .tablet-version > div {
